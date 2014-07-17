@@ -1,4 +1,4 @@
-== Welcome to the Twilio Rails Barn
+## Welcome to the Twilio Rails Barn
 
 This is the rails project that houses all of the code samples and production-ready solution areas using Twilio's platform.
 
