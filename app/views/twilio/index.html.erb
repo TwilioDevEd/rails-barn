@@ -1,4 +1,107 @@
-<div id="welcome-twilio">
-  <h1>Welcome to Twilio's Rails world</h1>
-  <p>This acts as your base application for interacting with all of the tutorials on the <a href="https://twilio.com/docs/">Twilio Docs</a>. In order to start working on a solution area check out the branch assigned with it. To list the branches type <code> git branch -r </code>.</p>
-</div> 
+<!-- Header -->
+<header id="header">
+
+    <!-- Logo -->
+    <h1 id="logo"><a href="#">555 Main Street</a></h1>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#intro">Welcome Home!</a></li>
+            <li><a href="#one">Kitchen</a></li>
+            <li><a href="#two">Basement Bar</a></li>
+            <li><a href="#contact">Talk To An Agent</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Intro -->
+<section id="intro" class="main style1 dark fullscreen">
+    <div class="content container small">
+        <header>
+            <h2>Welcome Home!</h2>
+        </header>
+        <p>
+            Your new home at 555 Main Street stands out on the curb with a charming wrap-around porch and classic colors.
+        </p>
+        <footer>
+            <a href="#one" class="button style2 down">More</a>
+        </footer>
+    </div>
+</section>
+
+<!-- One -->
+<section id="one" class="main style2 right dark fullscreen">
+    <div class="content box style2">
+        <header>
+            <h2>Gourmet Kitchen</h2>
+        </header>
+        <p>
+            This home features a gourmet kitchen that turns hot dogs into filet mignon and water to spiced rum.
+        </p>
+    </div>
+    <a href="#two" class="button style2 down anchored">Next</a>
+</section>
+
+<!-- Two -->
+<section id="two" class="main style2 left dark fullscreen">
+    <div class="content box style2">
+        <header>
+            <h2>Incredible Basement Bar</h2>
+        </header>
+        <p>
+            Inspire respect in your friends and fear in your enemies with this incredible sports bar, conveniently located in your basement.
+        </p>
+    </div>
+    <a href="#contact" class="button style2 down anchored">Next</a>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="main style3 secondary">
+    <div class="content container small">
+        <header>
+            <h2>Talk To An Agent</h2>
+            <p>
+                One of our agents is standing by to tell you more about this incredible home. Delay, and you are sure to regret it for the rest of your days.
+            </p>
+        </header>
+        <div class="box container small">
+            <p>
+                Viewing this on your smartphone or another device that can make calls? Just 
+                <a href="tel:<%= @twilio_number %>">click here to talk to an agent</a>.
+            </p>
+            <form id="contactform" method="post" action="#">
+                <div class="row half">
+                    <div class="6u">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="6u">
+                        <input type="text" name="phone" placeholder="Phone Number" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <ul class="actions">
+                            <li>
+                                <input type="submit" class="button" value="Call Me!"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+
+    <!-- Menu -->
+    <ul class="menu">
+        <li>&copy; 2014 Some Real Estate Agent</li>
+        <li>Powered By <a href="http://www.twilio.com">Twilio</a></li>
+        <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+    </ul>
+
+</footer>

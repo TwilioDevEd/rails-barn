@@ -20,6 +20,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# Validate phone numbers easily
+gem 'phony_rails'
 # Twilio REST API. 
 gem 'twilio-ruby'
 # bundle exec rake doc:rails generates the API under doc/api.
