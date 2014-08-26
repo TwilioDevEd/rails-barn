@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery.min
-//= require jquery.poptrox.min
-//= require skel.min
-//= require init
-//= require form
+//= require intl-phone/js/intlTelInput.min
+//= require app
 //= require_tree .

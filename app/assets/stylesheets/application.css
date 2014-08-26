@@ -12,9 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require skel.css
- *= require style.css
- *= require style-wide.css
- *= require style-normal.css
+ *= require intl-phone/css/intlTelInput.css
  */
 

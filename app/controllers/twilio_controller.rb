@@ -1,4 +1,5 @@
 require 'twilio-ruby'
+require 'haml'
 
 class TwilioController < ApplicationController
   include Webhookify
@@ -16,9 +17,8 @@ class TwilioController < ApplicationController
   # Hande a POST from our web form and connect a call via REST API
   def call
     contact = Contact.new
-    contact.name = params[:name]
     contact.phone = params[:phone]
-    puts root_url
+   
     # Validate contact
     if contact.valid?
 
